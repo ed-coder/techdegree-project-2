@@ -1,7 +1,13 @@
 /* ================================= 
   Base Element Styles
 ==================================== */
-
+:root {
+  --body-font: 'Russo One', sans-serif;
+  --bgcolor: rgb(224, 23, 107);
+  --white: #fff;
+  --black: #000;
+  --shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
 
 * {
   box-sizing: border-box;
