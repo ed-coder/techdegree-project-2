@@ -46,6 +46,11 @@ a {
   font-weight: bold;
 }
 
+a:hover {
+  background: rgba(127, 255, 238, .3);
+
+}
+
 .wrapper {
   padding: 1rem 1.3rem;
   text-align: center;
@@ -71,6 +76,11 @@ a {
   margin: .7rem 0;
   padding: 1rem 1rem;
   background: #fff;
+
+}
+
+.main-nav a:hover {
+  background: rgba(127, 255, 238, .3);
 
 }
 
@@ -102,7 +112,7 @@ main {
 footer {
   text-align: center;
   background: #fafafa;
-  padding: 3rem 1rem 1.5rem 1rem;
+  padding: 3rem 1rem 3rem 1rem;
 }
 
 .footer-contact {
@@ -148,10 +158,26 @@ footer a {
 ==================================== */
 
 @media (min-width: 768px) {
+  .wrapper {
+    padding: 1rem 0;
+  }
+
+  .main-header {
+    padding: 1rem 1.3rem;
+  }
+
+  main {
+    padding: 1rem 1.3rem;
+  }
+
+  .main-nav {
+    width: 60%;
+    margin: 0 auto;
+  }
 
   .main-nav a {
     float: left;
-    width: 33%;
+    width: calc(33.3%);
   }
 
   .main-info {
@@ -162,6 +188,10 @@ footer a {
     float: right;
     padding: 1rem;
 
+  }
+
+  .portfolio {
+    padding: 1rem 1.3rem;
   }
 
   .card {
