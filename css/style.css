@@ -138,3 +138,52 @@ footer a {
 .float-r {
   float: right;
 }
+
+/* https://stackoverflow.com/questions/15466898/selecting-half-the-elements-with-nth-child */
+footer ul li:nth-last-child(-n+3) {
+  display: none;
+}
+
+/* ================================= 
+  Media Queries 768
+==================================== */
+
+@media (min-width: 768px) {
+
+  .main-nav a {
+    float: left;
+    width: 33%;
+  }
+
+  .main-info {
+    text-align: left;
+  }
+
+  .cartoon-photo {
+    float: right;
+    padding: 1rem;
+
+
+  }
+
+  .card {
+    float: left;
+    width: calc(50%);
+    padding: 0 .5rem;
+    margin: 2rem 0;
+  }
+
+  footer ul li:nth-last-child(-n+3) {
+    display: block;
+    float: right;
+    width: 20%;
+  }
+
+  footer .float-l {
+    width: 20%;
+  }
+
+  footer ul li:nth-child(2) {
+    display: none;
+  }
+}
