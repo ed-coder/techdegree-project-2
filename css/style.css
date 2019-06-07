@@ -1,14 +1,6 @@
 /* ================================= 
   Base Element Styles
 ==================================== */
-:root {
-  --body-font: 'Russo One', sans-serif;
-  --bgcolor: rgb(224, 23, 107);
-  --white: #fff;
-  --black: #000;
-  --shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-}
-
 * {
   box-sizing: border-box;
 }
@@ -54,6 +46,12 @@ a {
   font-weight: bold;
 }
 
+.wrapper {
+  padding: 1rem 1.3rem;
+  text-align: center;
+  background: #fafafa;
+}
+
 .clearfix::after {
   content: '';
   display: table;
@@ -61,17 +59,42 @@ a {
 }
 
 /* ================================= 
-  Layout Styles
+  Main Styles
 ==================================== */
-.wrapper {
-  padding: 1rem 2rem;
-  text-align: center;
+
+.main-name {
+  font-size: 3rem;
+}
+
+.main-nav a {
+  display: block;
+  margin: .7rem 0;
+  padding: 1rem 1rem;
+  background: #fff;
+
+}
+
+main {
+  margin-top: 5rem;
+}
+
+/* ================================= 
+  Portofolio Styles
+==================================== */
+.portfolio {
+  margin-top: 100px;
+  padding-top: 3rem;
+  background: #fff;
 }
 
 .port-title {
   text-transform: uppercase;
 }
 
+.card {
+  margin: 3.5rem 0;
+  padding: 0 1.3rem;
+}
 
 /* ================================= 
   Footer Styles
@@ -80,7 +103,6 @@ footer {
   text-align: center;
   background: #fafafa;
   padding: 3rem 1rem 1.5rem 1rem;
-  margin-top: 5rem;
 }
 
 .footer-contact {
