@@ -1,0 +1,35 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Russo One', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
