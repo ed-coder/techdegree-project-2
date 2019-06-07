@@ -54,7 +54,11 @@ a {
   font-weight: bold;
 }
 
-
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
 
 /* ================================= 
   Layout Styles
@@ -75,7 +79,8 @@ a {
 footer {
   text-align: center;
   background: #fafafa;
-  padding: 1rem;
+  padding: 3rem 1rem 1.5rem 1rem;
+  margin-top: 5rem;
 }
 
 .footer-contact {
@@ -84,6 +89,7 @@ footer {
 
 footer .bolder {
   font-weight: bolder;
+  letter-spacing: .1rem;
 }
 
 hr {
@@ -95,4 +101,18 @@ hr {
   margin: 1em auto 2.5rem auto;
   padding: 0;
   width: 80%;
+}
+
+footer a {
+  display: block;
+  width: 40%;
+
+}
+
+.float-l {
+  float: left;
+}
+
+.float-r {
+  float: right;
 }
