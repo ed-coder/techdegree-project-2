@@ -139,8 +139,7 @@ footer a {
   float: right;
 }
 
-/* https://stackoverflow.com/questions/15466898/selecting-half-the-elements-with-nth-child */
-footer ul li:nth-last-child(-n+3) {
+.footer-nav-hider {
   display: none;
 }
 
@@ -163,7 +162,6 @@ footer ul li:nth-last-child(-n+3) {
     float: right;
     padding: 1rem;
 
-
   }
 
   .card {
@@ -173,17 +171,28 @@ footer ul li:nth-last-child(-n+3) {
     margin: 2rem 0;
   }
 
-  footer ul li:nth-last-child(-n+3) {
-    display: block;
-    float: right;
-    width: 20%;
-  }
-
-  footer .float-l {
-    width: 20%;
-  }
-
-  footer ul li:nth-child(2) {
+  .display-none {
     display: none;
   }
+
+  .footer-nav-hider {
+    display: block;
+    float: right;
+    width: 50%;
+  }
+
+  .footer-nav-hider a {
+    display: block;
+    float: left;
+    width: calc(33.3%);
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-nav-smaller {
+    float: left;
+    width: 40%;
+  }
+
+
 }
