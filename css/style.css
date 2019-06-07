@@ -21,11 +21,20 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: .1rem;
+  color: rgb(48, 48, 48);
+}
+
+h3 {
+  font-size: 1.8rem;
 }
 
 p {
   font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+  color: rgb(133, 133, 133);
+  line-height: 2.3rem;
 }
 
 img {
@@ -37,5 +46,53 @@ ul {
 }
 
 a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
   text-decoration: none;
+  color: rgb(133, 133, 133);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+
+/* ================================= 
+  Layout Styles
+==================================== */
+.wrapper {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.port-title {
+  text-transform: uppercase;
+}
+
+
+/* ================================= 
+  Footer Styles
+==================================== */
+footer {
+  text-align: center;
+  background: #fafafa;
+  padding: 1rem;
+}
+
+.footer-contact {
+  margin-bottom: 6rem;
+}
+
+footer .bolder {
+  font-weight: bolder;
+}
+
+hr {
+  /* https://stackoverflow.com/questions/6382023/changing-the-color-of-an-hr-element*/
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #e7e7e7;
+  margin: 1em auto 2.5rem auto;
+  padding: 0;
+  width: 80%;
 }
