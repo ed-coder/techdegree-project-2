@@ -119,6 +119,16 @@ footer {
   margin-bottom: 6rem;
 }
 
+.contact-info {
+  margin: 5rem 0 0 0;
+
+}
+
+.contact-info p {
+  margin: 0;
+
+}
+
 footer .bolder {
   font-weight: bolder;
   letter-spacing: .1rem;
@@ -152,6 +162,8 @@ footer a {
 .footer-nav-hider {
   display: none;
 }
+
+
 
 /* ================================= 
   Media Queries 768
@@ -224,5 +236,63 @@ footer a {
     width: 40%;
   }
 
+  .footer-info {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: .1rem;
+    width: 80%;
+    margin: 0 auto;
+  }
 
+
+}
+
+/* ================================= 
+  Media Queries 1024
+==================================== */
+
+@media (min-width: 1024px) {
+
+  .main-name {
+    display: inline-block;
+    float: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-nav {
+    display: inline-block;
+    float: right;
+    width: 40%;
+  }
+
+  .wrapper {
+    padding: 1rem 1.3rem;
+  }
+
+  .main-info {
+    width: 60%;
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: .1rem;
+  }
+
+  .cartoon-photo {
+    width: 40%;
+    padding: 0 2rem;
+  }
+
+  .card {
+    width: calc(33.3% - 20px);
+    padding: 0 .5rem;
+    margin: 2rem 10px;
+  }
+
+  .footer-info {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: .1rem;
+    width: 50%;
+    margin: 0 auto;
+  }
 }
