@@ -159,7 +159,7 @@ footer a {
   float: right;
 }
 
-.footer-nav-hider {
+footer ul li:nth-child(1n+3) {
   display: none;
 }
 
@@ -217,23 +217,17 @@ footer a {
     display: none;
   }
 
-  .footer-nav-hider {
+
+  footer ul li:nth-child(1n+3) {
     display: block;
-    float: right;
-    width: 50%;
+
   }
 
-  .footer-nav-hider a {
-    display: block;
-    float: left;
-    width: calc(33.3%);
+  footer ul li a {
+    float: right;
+    width: calc(20%);
     padding: 0;
     margin: 0;
-  }
-
-  .footer-nav-smaller {
-    float: left;
-    width: 40%;
   }
 
   .footer-info {
