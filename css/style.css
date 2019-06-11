@@ -13,7 +13,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   letter-spacing: .1rem;
   color: rgb(48, 48, 48);
 }
@@ -63,19 +63,36 @@ a:hover {
   clear: both;
 }
 
+.border-bot {
+  border-bottom: 5px solid orangered;
+  padding-bottom: 3px;
+}
+
 /* ================================= 
   Main Styles
 ==================================== */
+.main-header {
+  padding-bottom: 100px;
+}
 
 .main-name {
   font-size: 3rem;
+  font-style: italic;
+
+}
+
+
+.main-nav li {
+  background: rgb(58, 58, 58);
+  border-radius: 20px 5px 20px 5px;
+  margin-bottom: 20px;
 }
 
 .main-nav a {
   display: block;
-  margin: .7rem 0;
   padding: 1rem 1rem;
-  background: #fff;
+  color: white;
+
 
 }
 
@@ -85,25 +102,34 @@ a:hover {
 }
 
 main {
-  margin-top: 5rem;
+  padding-bottom: 50px;
 }
 
 /* ================================= 
   Portofolio Styles
 ==================================== */
 .portfolio {
-  margin-top: 100px;
   padding-top: 3rem;
   background: #fff;
+  box-shadow: 2px 2px 2px 2px rgb(223, 223, 223);
 }
 
 .port-title {
   text-transform: uppercase;
+
 }
 
 .card {
   margin: 3.5rem 0;
   padding: 0 1.3rem;
+}
+
+.card img {
+  transition: transform .2s;
+}
+
+.card img:hover {
+  transform: scale(1.2)
 }
 
 /* ================================= 
@@ -179,13 +205,29 @@ footer ul li:nth-child(1n+3) {
   }
 
   main {
-    padding: 1rem 1.3rem;
+    padding: 100px 1.3rem;
+    margin: 0;
   }
 
   .main-nav {
     width: 60%;
     margin: 0 auto;
+    border-radius: 20px 5px 20px 5px;
+    background: rgb(58, 58, 58);
   }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .main-nav a {
+    display: block;
+    padding: 1.5rem 1rem;
+    color: white;
+
+
+  }
+
 
   .main-nav a {
     float: left;
@@ -194,12 +236,12 @@ footer ul li:nth-child(1n+3) {
 
   .main-info {
     text-align: left;
+    margin: 0;
+    padding: 0
   }
 
   .cartoon-photo {
     float: right;
-    padding: 1rem;
-
   }
 
   .portfolio {
@@ -233,7 +275,7 @@ footer ul li:nth-child(1n+3) {
   .footer-info {
     font-size: 1.5rem;
     line-height: 1.5;
-    width: 80%;
+    max-width: 80%;
     margin: 0 auto;
   }
 
@@ -266,8 +308,7 @@ footer ul li:nth-child(1n+3) {
   .main-info {
     width: 60%;
     font-size: 2rem;
-    line-height: 1.5;
-    letter-spacing: .1rem;
+    line-height: 1.3;
   }
 
   .cartoon-photo {
@@ -284,7 +325,7 @@ footer ul li:nth-child(1n+3) {
   .footer-info {
     font-size: 1.5rem;
     line-height: 1.5;
-    width: 50%;
+    max-width: 60%;
     margin: 0 auto;
   }
 }
