@@ -52,7 +52,7 @@ a:hover {
 }
 
 .wrapper {
-  padding: 1rem 1.3rem;
+  padding: 1rem 1.3rem 100px 1.3rem;
   text-align: center;
   background: #fafafa;
 }
@@ -130,6 +130,51 @@ main {
 
 .card img:hover {
   transform: scale(1.2)
+}
+
+/* ================================= 
+  skills Styles
+==================================== */
+.skills-container {
+  background: linear-gradient(rgb(35, 35, 122), darkblue);
+  padding: 60px 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.skill-holder {
+  display: flex;
+  margin: 1rem 0;
+
+}
+
+.skill-title,
+.measure-box {
+  margin: 0 5px;
+
+}
+
+.skill-title {
+  color: white;
+  margin-right: 20px;
+}
+
+.measure-box {
+  width: 20px;
+  height: 20px;
+  background: url('../img/star.svg') no-repeat center center;
+}
+
+.box-uncolor {
+  background: url('../img/star_gray.svg') no-repeat center center;
+}
+
+.skills-title {
+  text-transform: uppercase;
+  color: white;
+
 }
 
 /* ================================= 
@@ -213,7 +258,7 @@ footer ul li:nth-child(1n+3) {
   }
 
   .main-nav {
-    width: 60%;
+    max-width: 80%;
     margin: 0 auto;
     border-radius: 20px 5px 20px 5px;
     background: rgb(58, 58, 58);
@@ -227,24 +272,23 @@ footer ul li:nth-child(1n+3) {
     display: block;
     padding: 1.5rem 1rem;
     color: white;
-
-
   }
 
 
   .main-nav a {
     float: left;
-    width: calc(33.3%);
+    width: calc(25%);
   }
 
   .main-info {
     text-align: left;
     margin: 0;
-    padding: 0
+    padding: 0;
   }
 
   .cartoon-photo {
     float: right;
+    margin-left: 10px;
   }
 
   .portfolio {
@@ -301,7 +345,11 @@ footer ul li:nth-child(1n+3) {
   .main-nav {
     display: inline-block;
     float: right;
-    max-width: 50%;
+    width: 60%;
+  }
+
+  .main-nav a {
+    width: calc(25%);
   }
 
   .wrapper {
