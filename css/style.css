@@ -8,6 +8,8 @@
 body {
   margin: 0;
   background: black;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 h1,
@@ -53,6 +55,8 @@ a:hover {
 }
 
 .wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 1rem 1.3rem 40px 1.3rem;
   text-align: center;
   background: linear-gradient(black, transparent), linear-gradient(transparent, black), url('../img/bodybackground.jpg') no-repeat center center/cover;
@@ -157,16 +161,20 @@ main {
   transform: scale(1.2)
 }
 
+.card-title {
+  color: rgb(73, 73, 148);
+}
+
 /* ================================= 
   skills Styles
 ==================================== */
 .skills-container {
   background: linear-gradient(orangered, transparent), linear-gradient(transparent, black), url('../img/galaxy.jpg') center center/cover;
-  padding: 60px 2rem;
+  padding: 40px 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 20px 40px 20px;
+  margin: 60px 20px 40px 20px;
   border-radius: 20px;
 
 }
@@ -267,7 +275,7 @@ hr {
 footer a {
   display: block;
   width: 40%;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 1rem 0;
 
 }
@@ -359,6 +367,8 @@ footer ul li:nth-child(1n+3) {
     margin-top: 30px;
   }
 
+
+
   footer ul li:nth-child(1n+3) {
     display: block;
 
@@ -428,6 +438,27 @@ footer ul li:nth-child(1n+3) {
     width: calc(33.3% - 20px);
     padding: 0 .5rem;
     margin: 2rem 10px;
+  }
+
+  .skills-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .skills-main-title {
+    position: absolute;
+    left: 30px;
+    top: 33px;
+    margin-left: auto;
+  }
+
+  .skill-holder {
+    flex: 0 0 calc(40% - 1rem);
+    padding: 0 1rem;
+    margin: 1rem 1rem;
   }
 
   .footer-info {
