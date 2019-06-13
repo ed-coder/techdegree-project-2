@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   margin: 0;
   background: black;
@@ -72,11 +73,11 @@ a:hover {
 .border-bot {
   border-bottom: 5px solid orangered;
   padding-bottom: 3px;
+
 }
 
 .border-hov:hover {
   border-top: 9px solid yellow;
-
 
 }
 
@@ -118,6 +119,7 @@ a:hover {
 }
 
 main {
+  border-top: 9px solid orangered;
   padding: 50px 30px;
   background: linear-gradient(orangered, transparent);
   border-radius: 20px;
@@ -178,6 +180,9 @@ main {
   align-items: center;
   margin: 60px auto 20px auto;
   border-radius: 20px;
+
+  border-top: 9px solid orangered;
+
 
 }
 
